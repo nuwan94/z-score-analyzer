@@ -14,6 +14,10 @@ i18n
       order: ["querystring", "cookie"],
       caches: ["cookie"],
     },
+    backend: {
+      loadPath: "./locales/{{lng}}/translation.json",
+    },
+    load: "all",
     interpolation: {
       escapeValue: false,
     },
