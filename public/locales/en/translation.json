@@ -1,0 +1,15 @@
+{
+    "title": "Z Score Analyzer",
+    "steps": ["Select district", "Enter Z-Score", "View Results"],
+    "stepLabels": {
+        "finish": "Finish",
+        "next": "Next",
+        "back": "Back",
+        "complete": "All steps completed.",
+        "reset": "Reset"
+    },
+    "theme": {
+        "light": "Light Mode",
+        "dark": "Dark Mode"
+    }
+}
