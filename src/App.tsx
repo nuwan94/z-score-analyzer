@@ -4,6 +4,7 @@ import NavBar from "components/NavBar";
 import Stepper from "components/Stepper";
 import appTheme from "helpers/theme";
 import React, { Suspense, useState } from "react";
+
 // import firebase from "helpers/firebase";
 import "./global.scss";
 import "./helpers/i18n";
@@ -14,7 +15,6 @@ const App = () => {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  
   // const ref = firebase.firestore().collection("z-scores");
 
   // useEffect(() => {
@@ -33,15 +33,18 @@ const App = () => {
   // }
 
   return (
-    <Suspense fallback={Loading} >
+    <Suspense fallback={Loading}>
       <ThemeProvider theme={appTheme(darkMode)}>
         <CssBaseline />
 
         <Grid container direction="column">
           <Grid item>
-            <NavBar theme={darkMode} toggleTheme={() => {
-              setDarkMode(!darkMode);
-            }} />
+            <NavBar
+              theme={darkMode}
+              toggleTheme={() => {
+                setDarkMode(!darkMode);
+              }}
+            />
           </Grid>
           <Grid item>
             <Container maxWidth="lg">
