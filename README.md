@@ -1,5 +1,7 @@
 # Z-Score Analyzer
 
+[![React app deployement](https://github.com/nuwan94/z-score-analyzer/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/nuwan94/z-score-analyzer/actions/workflows/build-deploy.yml)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
